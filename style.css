@@ -45,13 +45,14 @@
         max-width: 400px;
         padding-bottom: 20px; /* Adds extra space */
         opacity: 0; /* Initially hidden */
-        visibility: hidden
+        visibility: hidden;
+        bottom: 0
         
     }
 
     @media all and (max-width: 540px) {
         .sweet-alert {
-            width: 90%; /* Allows it to fit the screen better */
+            width: 95%; /* Allows it to fit the screen better */
             max-width: 400px; /* Prevents excessive stretching */
             margin-left: auto;
             margin-right: auto;
@@ -60,6 +61,7 @@
             height: auto;
             overflow-y: auto;
             transform: translate(-50%, -50%); /* Ensures proper centering */
+            
         }
     
         #12 {
