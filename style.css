@@ -27,6 +27,7 @@
     }
 
     .sweet-alert {
+        position: fixed;
         background-color: #fff;
         font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
         width: 90%;
@@ -45,6 +46,7 @@
         padding-bottom: 20px; /* Adds extra space */
         opacity: 0; /* Initially hidden */
         visibility: hidden;
+        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
         
         
     }
@@ -3991,17 +3993,6 @@
         #shareStep {
             display: block !important; /* Ensure it's visible */
         }
-        @media all and (max-width: 540px) {
-            .sweet-alert {
-                width: 90%;
-                max-width: 400px;
-                height: auto;
-                left: 50%;
-                transform: translateX(-50%);
-                overflow-y: auto; /* Allows scrolling if content is too long */
-                padding: 15px;
-            }
-        } 
         .sweet-alert.visible {
             opacity: 1;
             visibility: visible;
